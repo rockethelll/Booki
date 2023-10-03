@@ -59,6 +59,7 @@ a {
 }
 
 /* Search bar*/
+
 .search {
     margin: 40px 0;
 }
@@ -146,7 +147,7 @@ h1 {
     align-items: center;
     border: 2px solid var(--main-bg-color);
     border-radius: 25px;
-    padding: 15px 19px;
+    padding: 12px 19px;
     font-size: 16px;
     font-weight: 700;
     margin-right: 10px
@@ -154,11 +155,27 @@ h1 {
 
 .filter i {
     margin-right: 20px;
+    font-size: 22px;
 }
 
 .filter:hover {
     background-color: var(--filter-bg-color);
     cursor: pointer;
+}
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 
