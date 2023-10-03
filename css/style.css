@@ -122,6 +122,48 @@ h1 {
     cursor: pointer;
 }
 
+/* Filters*/
+.filters-bar {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    height: 50px;
+}
+
+.filters-bar h2 {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 25px;
+    padding: 15px 19px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px
+}
+
+.filter i {
+    margin-right: 20px;
+}
+
+.filter:hover {
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
+
+
+
+
 .section-title {
     margin: 0;
     font-size: 22px;
