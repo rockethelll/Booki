@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -42,6 +43,7 @@ nav {
     display: flex;
     align-items: start;
 }
+
 nav a {
     margin-left: 80px;
     padding: 15px 0;
@@ -68,6 +70,7 @@ h1 {
     font-size: 22px;
     margin-bottom: 0;
 }
+
 .search p {
     /*margin: 10px 0 40px 0;*/
 }
@@ -90,7 +93,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:50px;
+    width: 50px;
     height: 50px;
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
@@ -103,6 +106,7 @@ h1 {
     font-weight: bold;
     color: black;
 }
+
 ::placeholder {
     color: black;
     font-weight: bold;
@@ -176,6 +180,7 @@ h1 {
     background-color: var(--filter-bg-color);
     cursor: pointer;
 }
+
 .info {
     display: flex;
     align-items: center;
@@ -272,7 +277,6 @@ h1 {
 }
 
 .hebergements__cards .card__txt {
-    /*padding: 0 15px 10px 15px;*/
     padding: 5px 0 10px 15px;
 }
 
@@ -284,7 +288,7 @@ h1 {
     margin-top: 30px;
 }
 
-    /****** Populaires ***********/
+/****** Populaires ***********/
 .populaires {
     width: 32%;
 }
@@ -308,7 +312,7 @@ h1 {
     margin-top: 45px;
 }
 
-.populaires__cards img{
+.populaires__cards img {
     width: 33%;
     height: 146px;
     border-top-left-radius: 20px;
@@ -340,12 +344,9 @@ h1 {
 /* Activities */
 
 .activities {
+    width: 100%;
     padding: 30px;
     margin-bottom: 30px;
-}
-
-.activities a {
-    margin-right: 30px;
 }
 
 .activities h2 {
@@ -361,13 +362,16 @@ h1 {
 }
 
 .activities__cards {
-    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
+.activities__cards a {
+    width: calc(25% - 30px);
+}
+
 .activities__cards img {
-    width: 300px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -409,15 +413,15 @@ footer li {
     margin: 10px 0;
 }
 
-
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filters-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -447,6 +451,13 @@ footer li {
 
     .populaires__cards .card__subtitle {
         font-size: 13px;
+    }
+
+    .activities__cards img {
+        max-width: 194px;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
     }
 }
 
