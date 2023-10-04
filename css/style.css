@@ -33,6 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
 }
 
 header img {
@@ -41,6 +42,7 @@ header img {
 }
 
 nav {
+    height: 80px;
     display: flex;
     align-items: start;
 }
