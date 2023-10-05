@@ -352,7 +352,6 @@ h1 {
 
 .activities h3 {
     margin: 0;
-    height: auto;
     font-size: 16px;
     padding: 20px 19px;
 }
@@ -363,7 +362,8 @@ h1 {
 }
 
 .activities__cards a {
-    width: 23%;
+    display: flex;
+    max-width: 23%;
 }
 
 .activities__cards img {
@@ -553,14 +553,6 @@ footer li {
         font-size: 22px;
     }
 
-    .activities {
-        margin-bottom: 0;
-    }
-
-    .activities h2 {
-        margin-top: 0 ;
-    }
-
     .more {
         background-color: white;
     }
@@ -577,9 +569,17 @@ footer li {
         flex-direction: column;
     }
 
+    .activities {
+        margin-bottom: 0;
+    }
+
+    .activities h2 {
+        margin-top: 0 ;
+    }
+
     .activities__cards a {
         display: block;
-        width: 100%;
+        max-width: 100%;
         margin-bottom: 15px;
     }
 
