@@ -255,6 +255,11 @@ h1 {
     width: 100%;
 }
 
+.hebergements__cards a {
+    display: flex;
+    width: 33%;
+}
+
 .hebergements__cards img {
     width: 100%;
     height: 125px;
@@ -268,6 +273,9 @@ h1 {
 
 .hebergements__cards .card {
     margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 90%;
 }
 
 .hebergements__cards .card__txt {
@@ -559,6 +567,7 @@ footer li {
 
     .hebergements-and-populaires a {
         width: 100%;
+        display: block;
     }
 
     .populaires {
