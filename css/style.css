@@ -392,15 +392,15 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     background-color: var(--main-bg-color);
 }
 
 .footer__lists {
-    width: 33%;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 33%;
+    padding: 20px;
 }
 
 footer h2 {
