@@ -184,6 +184,7 @@ h1 {
 .info {
     display: flex;
     align-items: center;
+    height: 24px;
 }
 
 .info__icon {
@@ -195,6 +196,11 @@ h1 {
     border: 1px solid var(--main-bg-color);
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.info__icon i {
+    font-size: 12px;
+    transform: translateX(10%) translateY(-10%);
 }
 
 .card {
